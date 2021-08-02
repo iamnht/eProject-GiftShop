@@ -481,7 +481,7 @@ label{
     position: relative;
     width: 250px;
     height: 400px;
-    border: 3px solid black;
+/*     border: 3px solid black; */
     margin-bottom: 30px!important;
     margin: 0 10px;
     transition:  0.2s linear;
