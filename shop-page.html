@@ -21,14 +21,14 @@
             <div class="navbar"> 
                     <ul class="menu">
                         <li><a href="index.html">HOME</a></li>
-                        <li><a class="filter" href="shop-page.html" data-filter="all">SHOP<i class="icon glyphicon glyphicon-chevron-down"></i></a>
-                            <ul class="subnav" id="filter_button">
+                        <li><a class="filter" href="shop-page.html" data-filter="all">SHOP</a>
+                            <!-- <ul class="subnav" id="filter_button">
                                 <li><a class="filter" data-filter="MUG">Mugs</a></li>
                                 <li><a href="#" class="filter" data-filter="Jewelry" >Jewelries</a></li>
                                 <li><a href="#" class="filter" data-filter="CLOCK">Clocks</a></li>
                                 <li><a href="#" class="filter" data-filter="Stuffed animals" >Stuffed Animal</a></li>
                                 <li><a href="#" class="filter" data-filter="Perfume">Perfumes</a></li>
-                            </ul>
+                            </ul> -->
                         </li>                        
                         <li><a href="features.html">FEATURES</a></li>
                     <!-- Logo -->
@@ -44,9 +44,9 @@
 
 <!-- Start: Side-bar -->
 <div class="side-bar">
-    <a href="#"><span class="fa fa-facebook"></span></a>
-    <a href="#"><span class="fa fa-instagram"></span></a>
-    <a href="#"><span class="fa fa-twitter"></span></a>
+    <a href="#"><span class="fa-icon fa fa-facebook"></span></a>
+    <a href="#"><span class="fa-icon fa fa-instagram"></span></a>
+    <a href="#"><span class="fa-icon fa fa-twitter"></span></a>
  </div>
  <!-- End: Side-bar -->
 
@@ -56,12 +56,12 @@
 <div id="filter-data" class="filter-section container-fluid">
         
             <!--Start: Cột Filter -->
-            <div class="col-sm-4 col-md-4 ">
+            <div class="col-sm-3 col-md-3 col-lg-3 ">
+                <div class="categories-header">
+                    <p>Categories <span class="fa fa-filter" style="color: black; font-size: 20px"></span></p>
+                </div>
 
                 <div class="slide-box" id="filter_button">
-                    <div class="categories-header">
-                        <p>Categories <span class="fa fa-filter" style="color: black; font-size: 20px"></span></p>
-                    </div>
     
                     <div class="vertical-menu">
                         <ul>
@@ -69,41 +69,41 @@
                             <!-- Mug Item -->
                             <li class='sub-menu'><a class="filter" data-filter="MUG" href='#mugs'>Mugs<div class='fa fa-caret-down right'></div></a>
                                 <ul>
-                                    <li><a class="filter-brand pdbrand" id="check-brands">brand 1</a></li>
-                                    <li><a class="filter-brand pdbrand" id="check-brands">brand 2</a></li>
-                                    <li><a class="filter-brand pdbrand" id="check-brands">brand 3</a></li>
+                                    <li><a class="filter-brand pdbrand" data-filter="Clay Craft">Clay Craft</a></li>
+                                    <li><a class="filter-brand pdbrand" data-filter="LaOpala">LaOpala</a></li>
+                                    <li><a class="filter-brand pdbrand" data-filter="Milton">Milton</a></li>
                                 </ul> 
                             </li>
                             <!-- Jewelries Item -->
                             <li class='sub-menu'><a class="filter" data-filter="Jewelry" href='#jewelries'>Jewelries<div class='fa fa-caret-down right'></div></a>
                                 <ul>
-                                    <li><a class="filter-brand pdbrand" id="check-brands">brand 1</a></li>
-                                    <li><a class="filter-brand pdbrand" id="check-brands">brand 2</a></li>
-                                    <li><a class="filter-brand pdbrand" id="check-brands">brand 3</a></li>
+                                    <li><a class="filter-brand pdbrand" data-filter="Jewels galaxy">Jewels galaxy</a></li>
+                                    <li><a class="filter-brand pdbrand" data-filter="Sukkhi">Sukkhi</a></li>
+                                    <li><a class="filter-brand pdbrand" data-filter="Zaveri Pearls">Zaveri Pearls</a></li>
                                 </ul>
                             </li>
                             <!-- Perfume Item -->
                             <li class='sub-menu'><a class="filter" data-filter="Perfume" href='#perfume'>Perfume<div class='fa fa-caret-down right'></div></a>
                                 <ul>
-                                    <li><a class="filter-brand pdbrand" id="check-brands">brand 1</a></li>
-                                    <li><a class="filter-brand pdbrand" id="check-brands">brand 2</a></li>
-                                    <li><a class="filter-brand pdbrand" id="check-brands">brand 3</a></li>
+                                    <li><a class="filter-brand pdbrand" data-filter="Axe">Axe</a></li>
+                                    <li><a class="filter-brand pdbrand" data-filter="Chanel">Chanel</a></li>
+                                    <li><a class="filter-brand pdbrand" data-filter="Miniso">Miniso</a></li>
                                 </ul>
                             </li>
                             <!-- Clock Item -->
                             <li class='sub-menu'><a class="filter" data-filter="CLOCK" href='#clock'>Clock<div class='fa fa-caret-down right'></div></a>
                                 <ul>
-                                    <li><a class="filter-brand pdbrand" id="check-brands">brand 1</a></li>
-                                    <li><a class="filter-brand pdbrand" id="check-brands">brand 2</a></li>
-                                    <li><a class="filter-brand pdbrand" id="check-brands">brand 3</a></li>
+                                    <li><a class="filter-brand pdbrand" data-filter="Ajanta">Ajanta</a></li>
+                                    <li><a class="filter-brand pdbrand" data-filter="Oreva">Oreva</a></li>
+                                    <li><a class="filter-brand pdbrand" data-filter="Solimo">Solimo</a></li>
                                 </ul>
                             </li>
                             <!-- Stuffed Animal -->
                             <li class='sub-menu'><a class="filter" data-filter="Stuffed animals" href='#animal'>Stuffed Animal<div class='fa fa-caret-down right'></div></a>
                                 <ul>
-                                    <li><a class="filter-brand pdbrand" id="check-brands">brand 1</a></li>
-                                    <li><a class="filter-brand pdbrand" id="check-brands">brand 2</a></li>
-                                    <li><a class="filter-brand pdbrand" id="check-brands">brand 3</a></li>
+                                    <li><a class="filter-brand pdbrand" data-filter="BTC">BTC</a></li>
+                                    <li><a class="filter-brand pdbrand" data-filter="Click4deal">Click4deal</a></li>
+                                    <li><a class="filter-brand pdbrand" data-filter="Webby">Webby</a></li>
                                 </ul>
                             </li>
                        
@@ -115,15 +115,36 @@
 
             
 
-            <!-- Cột Sản phẩm -->
+            <!-- div#products show data json -->
             <div class="col-sm-8 col-md-8">
 
                     <div class="mid1" id="products">
 
-                        <div class="element_gifts" data-id="abc" data-item="MUG">
-                            <img src="product image/mugs/clay craft/M-CC-1.jpg">
-                        </div>
+                        
                     </div>
+            </div>
+            <!-- Modal -->
+            <div class="modal fade" id="showModal" role="dialog">
+                <div class="modal-dialog modal-lg">
+
+                    <!-- Modal content-->
+                    <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    </div>
+                    <!-- div.modal-body include json data -->
+                    <div class="modal-body">
+                        <div class="row">
+                    
+                    
+                        </div>
+                       
+                    </div>
+                    <div class="modal-footer">
+                    </div>
+                    </div>
+
+                </div>
             </div>
     
 </div>
@@ -217,15 +238,15 @@
         <!-- Social Media -->
         <div class="social-icons">
             <div class="icons">
-                <a href="#"><span class="fa fa-facebook"></span></a>
+                <a href="#"><span class="fa-icon fa fa-facebook"></span></a>
             </div>
 
             <div class="icons">
-                <a href="#"><span class="fa fa-instagram"></span></a>
+                <a href="#"><span class="fa-icon fa fa-instagram"></span></a>
             </div>
 
             <div class="icons">
-                <a href="#"><span class="fa fa-twitter"></span></a>
+                <a href="#"><span class="fa-icon fa fa-twitter"></span></a>
             </div>
         </div>
 
@@ -285,9 +306,9 @@
 
                 <div class="social-platform margin">
                     <ul class="social-list">
-                        <li><a href="#facebook"><i class="fb fa fa-facebook-f"></i></a></li>
-                        <li><a href="#twitter"><i class="twt fa fa-twitter"></i></a></li>
-                        <li><a href="#google"><i class="gg fa fa-google-plus"></i></a></li>
+                        <li><a href="#facebook"><i class="fb fa-icon fa fa-facebook-f"></i></a></li>
+                        <li><a href="#twitter"><i class="twt fa-icon fa fa-twitter"></i></a></li>
+                        <li><a href="#google"><i class="gg fa-icon fa fa-google-plus"></i></a></li>
                     </ul>
                 </div>
                 
