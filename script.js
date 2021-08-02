@@ -115,7 +115,7 @@ function showModal(json)
     </div>           
     `;
     
-    $('.modal-').html(s);
+    $('.modal-item').html(s);
 
 }
 
