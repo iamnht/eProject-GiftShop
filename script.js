@@ -78,8 +78,18 @@ function showImage(items)
     s += `
     <div class="element_gifts" data-id="${json.pdid}" data-item="${json.pdcatogery}" data-brand="${json.pdbrand}">
           <img src="${json.pdimage}" alt="">
-          <p style="font-size: 25px; color: #444141">  ${json.pdname} </p>
+          <p style="font-size: 25px; color: #444141; font-weight: 350">  ${json.pdname} </p>
           <p style="color: black; font-weight: 700; font-size: 20px"> ${json.pdprice}</p>
+        <div class="shop-btn">
+          <button class="btn btn-black">
+            Purchase
+          </button>
+
+          <button class="btn btn-pink">
+          Add to
+          <i class="glyphicon glyphicon-shopping-cart"></i>
+        </button>
+        </div>
     </div>`;
   });
   $("#products").html(s);
