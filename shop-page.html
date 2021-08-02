@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <script src="https://use.fontawesome.com/34fc0a3bbd.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Demo</title>
+
+
+</head>
+<body>
+    
+<!-- Start Header (NavBar + Logo) -->
+    <div id="header" class="row fixed-top-header">
+            <!-- Start: Navbar -->
+            <div class="navbar"> 
+                    <ul class="menu">
+                        <li><a href="index.html">HOME</a></li>
+                        <li><a class="filter" href="shop-page.html" data-filter="all">SHOP</a>
+                            <!-- <ul class="subnav" id="filter_button">
+                                <li><a class="filter" data-filter="MUG">Mugs</a></li>
+                                <li><a href="#" class="filter" data-filter="Jewelry" >Jewelries</a></li>
+                                <li><a href="#" class="filter" data-filter="CLOCK">Clocks</a></li>
+                                <li><a href="#" class="filter" data-filter="Stuffed animals" >Stuffed Animal</a></li>
+                                <li><a href="#" class="filter" data-filter="Perfume">Perfumes</a></li>
+                            </ul> -->
+                        </li>                        
+                        <li><a href="features.html">FEATURES</a></li>
+                    <!-- Logo -->
+                        <a style="padding:0 50px" href="index.html"> <img src="Media/logo/logo1(black).png" width="150" height="60"></a>
+                            <li><a href="about-us.html">ABOUT US</a></li>
+                            <li><a href="contact.html">CONTACT</a></li>
+                            <li><a href="#" id="member">MEMBER</a></li>
+                    </ul>
+            </div> 
+            <!-- End: Navbar -->
+    </div>
+<!-- End: Header -->
+
+<!-- Start: Side-bar -->
+<div class="side-bar">
+    <a href="#"><span class="fa-icon fa fa-facebook"></span></a>
+    <a href="#"><span class="fa-icon fa fa-instagram"></span></a>
+    <a href="#"><span class="fa-icon fa fa-twitter"></span></a>
+ </div>
+ <!-- End: Side-bar -->
+
+
+<!-- START DATA JSON PRODUCT -->
+
+<div id="filter-data" class="filter-section container-fluid">
+        
+            <!--Start: Cột Filter -->
+            <div class="col-sm-3 col-md-3 col-lg-3 ">
+                <div class="categories-header">
+                    <p>Categories <span class="fa fa-filter" style="color: black; font-size: 20px"></span></p>
+                </div>
+
+                <div class="slide-box" id="filter_button">
+    
+                    <div class="vertical-menu">
+                        <ul>
+                            <li><a href='#profile' class="filter" data-filter="all">All</a></li>
+                            <!-- Mug Item -->
+                            <li class='sub-menu'><a class="filter" data-filter="MUG" href='#mugs'>Mugs<div class='fa fa-caret-down right'></div></a>
+                                <ul>
+                                    <li><a class="filter-brand pdbrand" data-filter="Clay Craft">Clay Craft</a></li>
+                                    <li><a class="filter-brand pdbrand" data-filter="LaOpala">LaOpala</a></li>
+                                    <li><a class="filter-brand pdbrand" data-filter="Milton">Milton</a></li>
+                                </ul> 
+                            </li>
+                            <!-- Jewelries Item -->
+                            <li class='sub-menu'><a class="filter" data-filter="Jewelry" href='#jewelries'>Jewelries<div class='fa fa-caret-down right'></div></a>
+                                <ul>
+                                    <li><a class="filter-brand pdbrand" data-filter="Jewels galaxy">Jewels galaxy</a></li>
+                                    <li><a class="filter-brand pdbrand" data-filter="Sukkhi">Sukkhi</a></li>
+                                    <li><a class="filter-brand pdbrand" data-filter="Zaveri Pearls">Zaveri Pearls</a></li>
+                                </ul>
+                            </li>
+                            <!-- Perfume Item -->
+                            <li class='sub-menu'><a class="filter" data-filter="Perfume" href='#perfume'>Perfume<div class='fa fa-caret-down right'></div></a>
+                                <ul>
+                                    <li><a class="filter-brand pdbrand" data-filter="Axe">Axe</a></li>
+                                    <li><a class="filter-brand pdbrand" data-filter="Chanel">Chanel</a></li>
+                                    <li><a class="filter-brand pdbrand" data-filter="Miniso">Miniso</a></li>
+                                </ul>
+                            </li>
+                            <!-- Clock Item -->
+                            <li class='sub-menu'><a class="filter" data-filter="CLOCK" href='#clock'>Clock<div class='fa fa-caret-down right'></div></a>
+                                <ul>
+                                    <li><a class="filter-brand pdbrand" data-filter="Ajanta">Ajanta</a></li>
+                                    <li><a class="filter-brand pdbrand" data-filter="Oreva">Oreva</a></li>
+                                    <li><a class="filter-brand pdbrand" data-filter="Solimo">Solimo</a></li>
+                                </ul>
+                            </li>
+                            <!-- Stuffed Animal -->
+                            <li class='sub-menu'><a class="filter" data-filter="Stuffed animals" href='#animal'>Stuffed Animal<div class='fa fa-caret-down right'></div></a>
+                                <ul>
+                                    <li><a class="filter-brand pdbrand" data-filter="BTC">BTC</a></li>
+                                    <li><a class="filter-brand pdbrand" data-filter="Click4deal">Click4deal</a></li>
+                                    <li><a class="filter-brand pdbrand" data-filter="Webby">Webby</a></li>
+                                </ul>
+                            </li>
+                       
+                        </ul>
+                    </div>
+                </div>
+                <!-- End: Cột Filter -->
+            </div>
+            <!-- End: Cột Filter -->
+
+            <!-- Start: Cột sản phẩm -->
+            <div class="col-sm-9 col-md-9">
+                <!-- Khối chứa thông tin sản phẩm -->
+                    <div class="mid1" id="products">
+                    </div>
+            </div>
+            <!-- End: Cột sản phẩm -->
+
+
+            <!-- Modal -->
+            <div class="modal fade" id="showModal" role="dialog">
+                <div class="modal-dialog modal-lg">
+
+                    <!-- Modal content-->
+                    <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    </div>
+                    <!-- div.modal-body include json data -->
+                    <div class="modal-body modal-item">    
+                    </div>
+                    <div class="modal-footer">
+                    </div>
+                    </div>
+
+                </div>
+            </div>
+    
+</div>
+<!-- END DATA PRODUCT -->
+
+
+
+
+<!-- Start: Feedback -->
+<div class="row background">
+    <div class="title-header text-center">
+        <p style="letter-spacing: 2px;">Feedbacks</p>
+        <p>______</p>
+    </div>
+
+    <div class="container" style="margin-bottom: 20px;">
+       <!-- Feedback 1-->
+        <div class="col-lg-3">
+            <div class="img-size img-layer"><img src="Media/feedback/feedback1.jpeg" alt="">
+                <div class="img-overlay"></div>
+                <!-- Nội dung hiển thị trên ảnh -->
+                <div class="img-content">
+                    <!-- Tiêu đề -->
+                    <h3 class="img-title">Noah Clark</h3>
+                    <!-- Description -->
+                    <blockquote class="img-quote font-weight-light mb-0">" Quality product, This shop is a must-go place."</blockquote>
+                </div>
+            </div>
+        </div>
+       <!-- Feedback 2-->
+       <div class="col-lg-3">
+        <div class="img-size img-layer"><img src="Media/feedback/feedback2.jpeg" alt="">
+            <div class="img-overlay"></div>
+            <!-- Nội dung hiển thị trên ảnh -->
+            <div class="img-content">
+                <!-- Tiêu đề -->
+                <h3 class="img-title">Olivia Rodrigo</h3>
+                <!-- Description -->
+                <blockquote class="img-quote font-weight-light mb-0">" Incredible delivery service, lovely product."</blockquote>
+            </div>
+        </div>
+    </div>
+      <!-- Feedback 3-->
+      <div class="col-lg-3">
+        <div class="img-size img-layer"><img src="Media/feedback/feedback3.jpeg" alt="">
+            <div class="img-overlay"></div>
+            <!-- Nội dung hiển thị trên ảnh -->
+            <div class="img-content">
+                <!-- Tiêu đề -->
+                <h3 class="img-title">Florence Pugh</h3>
+                <!-- Description -->
+                <blockquote class="img-quote font-weight-light mb-0">"Very good product as said in description."</blockquote>
+            </div>
+        </div>
+    </div>   
+    
+    
+    <!-- Feedback 4-->
+    <div class="col-lg-3">
+        <div class="img-size img-layer"><img src="Media/feedback/feedback4.jpeg" alt="">
+            <div class="img-overlay"></div>
+            <!-- Nội dung hiển thị trên ảnh -->
+            <div class="img-content">
+                <!-- Tiêu đề -->
+                <h3 class="img-title">Rachel McAdams</h3>
+                <!-- Description -->
+                <blockquote class="img-quote font-weight-light mb-0">"This mug has become my most favourite. "</blockquote>
+            </div>
+        </div>
+    </div> 
+
+    </div>
+</div>
+<!-- End: Feedback --> 
+
+<!-- Start: Footer -->
+<div class="row footer">
+    
+    <div class="container">
+        <!-- Logo -->
+        <div class="logo">
+            <img src="Media/logo/logo1(white).png" width="150" height="60">
+        </div>
+        
+        <!-- Contact Information -->
+        <div class="contact">
+            <p style="font-size: 20px">Plot No. 42 & 43, ASR Crest, Image Gardens Rd, Madhapur, 500081, India </p>
+            <p style="font-size: 20px;">giftshop@gmail.com </p> 
+            <p style="font-size: 20px;">022 261 560 93 </p>
+        </div>
+        <!-- Social Media -->
+        <div class="social-icons">
+            <div class="icons">
+                <a href="#"><span class="fa-icon fa fa-facebook"></span></a>
+            </div>
+
+            <div class="icons">
+                <a href="#"><span class="fa-icon fa fa-instagram"></span></a>
+            </div>
+
+            <div class="icons">
+                <a href="#"><span class="fa-icon fa fa-twitter"></span></a>
+            </div>
+        </div>
+
+        <div class="copyright text-center">
+            <h4 style="font-weight: 200;">Copyright &copy by Gift Shop. All rights reserved.</h4>
+        </div>
+
+    </div>
+</div>
+<!-- End: Footer -->
+
+<!-- Modal Member -->
+<div class="modal fade" id="memberModal" role="dialog">
+    <div class="modal-dialog modal-lg row">
+    
+            <!-- Modal content-->
+        <div class="modal-content">
+
+              <!-- Modal Header -->
+              <div class="modal-header text-center" style="padding:35px 50px; background: #ffe5d8">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <h4 style="letter-spacing: 1.5px;">MEMBERSHIP</h4>
+              </div>
+
+              <!--Start: Modal Body -->
+              <!-- Left-Body -->
+              <div class="modal-body col-md-6" style="padding:40px 50px; background: #f4f9ff">
+                <div class="text-center modal-header">
+                    <h3>Log in </h3>
+                </div>
+                
+                <form role="form" class="margin">
+
+                  <div class="form-group">
+                    <label for="usrname"><span class="glyphicon glyphicon-user"></span> Email</label>
+                    <input type="email" class="form-control" id="usremail" placeholder="">
+                  </div>
+
+                  <div class="form-group">
+                    <label for="psw"><span class="glyphicon glyphicon-eye-open"></span> Password</label>
+                    <input type="password" class="form-control" id="psw" placeholder="">
+                  </div>
+
+                  <div class="checkbox">
+                    <label><input type="checkbox" value="" checked>Remember me</label>
+                  </div>
+
+                    <button type="submit" class="login-btn btn btn-block">Login</button>
+                </form>
+                
+              </div>
+              <!-- Right-Body -->
+              <div class="modal-body col-md-6 bg-member" style="padding:40px 50px;">
+                <div class="text-center modal-header">
+                    <h3>Log in with</h3>
+                </div>
+
+                <div class="social-platform margin">
+                    <ul class="social-list">
+                        <li><a href="#facebook"><i class="fb fa-icon fa fa-facebook-f"></i></a></li>
+                        <li><a href="#twitter"><i class="twt fa-icon fa fa-twitter"></i></a></li>
+                        <li><a href="#google"><i class="gg fa-icon fa fa-google-plus"></i></a></li>
+                    </ul>
+                </div>
+                
+              </div>
+              <!-- End: Modal Body -->
+    </div>
+  </div> 
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
