@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -10,234 +11,268 @@
     <script src="https://use.fontawesome.com/34fc0a3bbd.js"></script>
     <link rel="stylesheet" href="style.css">
     <title>Home</title>
+
 </head>
+
 <body>
-<!-- Start Header (NavBar + Logo) -->
+
+    <!-- Start Header (NavBar + Logo) -->
     <div id="header" class="row fixed-top-header">
-            <!-- Start: Navbar -->
-            <div class="navbar"> 
-                    <ul class="menu">
-                        <li><a href="index.html">HOME</a></li>
-                        <li><a href="shop-page.html">SHOP</a>
-                            <!-- <ul class="subnav">
-                                <li><a href="#">Mugs</a></li>
-                                <li><a href="#">Jewelries</a></li>
-                                <li><a href="#">Clocks</a></li>
-                                <li><a href="#">Stuffed Animal</a></li>
-                                <li><a href="#">Perfumes</a></li>
+        <!-- Start: Navbar -->
+        <div class="navbar">
+            <ul class="menu">
+                <li><a href="index.html">HOME</a></li>
+                <li><a class="filter" href="shop-page.html" data-filter="all">SHOP</a>
+                    <!-- <ul class="subnav" id="filter_button">
+                                <li><a class="filter" data-filter="MUG">Mugs</a></li>
+                                <li><a href="#" class="filter" data-filter="Jewelry" >Jewelries</a></li>
+                                <li><a href="#" class="filter" data-filter="CLOCK">Clocks</a></li>
+                                <li><a href="#" class="filter" data-filter="Stuffed animals" >Stuffed Animal</a></li>
+                                <li><a href="#" class="filter" data-filter="Perfume">Perfumes</a></li>
                             </ul> -->
-                        </li>                        
-                        <li><a href="features.html">FEATURES</a></li>
-                    <!-- Logo -->
-                        <a style="padding:0 50px" href="index.html"> <img src="Media/logo/logo1(black).png" width="150" height="60"></a>
-                            <li><a href="about-us.html">ABOUT US</a></li>
-                            <li><a href="contact.html">CONTACT</a></li>
-                            <li><a href="#" id="member">MEMBER</a></li>
-                    </ul>
-            </div> 
-            <!-- End: Navbar -->
+                </li>
+                <li><a href="features.html">FEATURES</a></li>
+                <li><a href="gallery.html">GALLERY</a></li>
+                <!-- Logo -->
+                <a style="padding:0 50px" href="index.html"> <img src="Media/logo/logo1(black).png" width="150"
+                        height="60"></a>
+                <li><a href="about-us.html">ABOUT US</a></li>
+                <li><a href="contact.html">CONTACT</a></li>
+                <li class="cart">
+                    <a href="#" id="cart-shop">
+                        <span></span>
+                        <span>ITEMS</span>
+                        <span class="glyphicon glyphicon-shopping-cart" id="count-item" data-count="0"></span>
+                    </a>
+                </li>
+                <li><a href="#" id="member">MEMBER</a></li>
+            </ul>
+        </div>
+        <!-- End: Navbar -->
     </div>
-<!-- End: Header -->
+    <!-- End: Header -->
 
-<!-- Start: Side-bar -->
-<div class="side-bar">
-    <a href="#"><span class="fa-icon fa fa-facebook"></span></a>
-    <a href="#"><span class="fa-icon fa fa-instagram"></span></a>
-    <a href="#"><span class="fa-icon fa fa-twitter"></span></a>
- </div>
- <!-- End: Side-bar -->
-        
-<!-- Start: Carousel/Slide-->
-        <div class="section container">
-            <div id="carousel-id" class="carousel slide" data-ride="carousel">
-                <!-- Thanh điều chỉnh nút slide -->
-                <ol class="carousel-indicators">
-                    <li data-target="#carousel-id" data-slide-to="0" class="active"></li>
-                    <li data-target="#carousel-id" data-slide-to="1" class=""></li>
-                    <li data-target="#carousel-id" data-slide-to="2" class=""></li>
-                </ol>
-                <!-- Start: Slide -->
-                <div class="carousel-inner">
-                    <div class="active item">
-                        <img src="Media/carousel/promotion-slide.jpg" style="width: 100%; height: 550px">
-                        <div class="container">
-                            <div class="carousel-caption">
-                                <!-- <h1>Example headline.</h1>
+    <!-- Start: Right-side-bar -->
+    <div class="right-side-bar">
+        <a href="#"><span class="fa-icon fa fa-facebook"></span></a>
+        <a href="#"><span class="fa-icon fa fa-instagram"></span></a>
+        <a href="#"><span class="fa-icon fa fa-twitter"></span></a>
+    </div>
+    <!-- End: Right-side-bar -->
+
+    <!-- Start: Carousel/Slide-->
+    <div class="section container">
+        <div id="carousel-id" class="carousel slide" data-ride="carousel">
+            <!-- Thanh điều chỉnh nút slide -->
+            <ol class="carousel-indicators">
+                <li data-target="#carousel-id" data-slide-to="0" class="active"></li>
+                <li data-target="#carousel-id" data-slide-to="1" class=""></li>
+                <li data-target="#carousel-id" data-slide-to="2" class=""></li>
+            </ol>
+            <!-- Start: Slide -->
+            <div class="carousel-inner">
+
+                <div class="active item">
+                    <img src="Media/carousel/promotion-slide.jpg" style="width: 100%; height: 550px">
+                    <div class="container">
+                        <div class="carousel-caption">
+                            <!-- <h1>Example headline.</h1>
                                 <p>Note: If you're viewing this page via a <code>file://</code> URL, the "next" and "previous" Glyphicon buttons on the left and right might not load/display properly due to web browser security rules.</p> -->
-                                <p><a class="btn1 btn btn-lg btn-primary" href="#" role="button">Check Now</a></p>
-                            </div>
+                            <p><a class="btn1 btn btn-lg btn-primary" href="shop-page.html" role="button">Check Now</a></p>
                         </div>
                     </div>
-                    <div class="item">
-                        <img src="Media/carousel/newArrival-slide.jpg" style="width: 100%; height: 550px">
-                        <div class="container">
-                            <div class="carousel-caption">
-                                <!-- <h1>Another example headline.</h1>
+                </div>
+
+                <div class="item">
+                    <img src="Media/carousel/newArrival-slide.jpg" style="width: 100%; height: 550px">
+                    <div class="container">
+                        <div class="carousel-caption">
+                            <!-- <h1>Another example headline.</h1>
                                 <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p> -->
-                                <p><a class="btn btn1 btn2 btn-lg btn-primary" href="#" role="button">BUY NOW</a></p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="item">
-                        <img src="Media/carousel/chirstmas-slide.jpg" style="width: 100%; height: 550px">
-                        <div class="container">
-                            <div class="carousel-caption">
-                                <h1>Christmas Coming</h1>
-                                <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
-                                <p><a class="btn btn1 btn3 btn-lg btn-primary" href="#" role="button">Gallery</a></p>
-                            </div>
+                            <p><a class="btn btn1 btn2 btn-lg btn-primary" href="shop-page.html" role="button">BUY NOW</a></p>
                         </div>
                     </div>
                 </div>
-                <!-- -->
-                <a class="left carousel-control" href="#carousel-id" data-slide="prev"><span class="glyphicon glyphicon-chevron-left"></span></a>
-                <a class="right carousel-control" href="#carousel-id" data-slide="next"><span class="glyphicon glyphicon-chevron-right"></span></a>
-            </div>
-        </div>
-<!--End: Carousel  -->
 
-<!-- Start: Best Seller -->
-<div class="row background">
-    <!-- Tittle-->
-    <div class="title-header text-center">
-        <p style="letter-spacing: 2px;">Best Seller</p>
-        <p>______</p>
-    </div>
-  <div class="container menu-box">
-        <!-- Body -->
-        <div id="listItem" class="list-items">
-
-            <div class="col-md-2">
-            <div class="menu-item">
-                <a href="#"><img src="Media/best-seller/mug1.jpeg" width="100%"></a>
-                <div class="detail-item">
-                    <h4>Vaccuum Coffee Mug</h4>
-                    <h5>$35</h5>
+                <div class="item">
+                    <img src="Media/carousel/chirstmas-slide.jpg" style="width: 100%; height: 550px">
+                    <div class="container">
+                        <div class="carousel-caption">
+                            <h1>Christmas Coming</h1>
+                            <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta
+                                gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+                            <p><a class="btn btn1 btn3 btn-lg btn-primary" href="gallery.html" role="button">Gallery</a>
+                            </p>
+                        </div>
+                    </div>
                 </div>
+                
             </div>
-            </div>
-
-            <div class="col-md-2">
-            <div class="menu-item">
-                <a href="#"><img src="Media/best-seller/gaubong1.jpeg" width="100%"></a>
-                <div class="detail-item">
-                    <h4>Stuffed Animal Corgi</h4>
-                    <h5>$35.00</h5>
-                </div>
-            </div>
-            </div>
-
-            <div class="col-md-2">
-            <div class="menu-item">
-                <a href="#"><img src="Media/best-seller/clock1.jpeg" width="100%"></a>
-                <div class="detail-item">
-                    <h4>Fish-Tank Clock</h4>
-                    <h5>$35.00</h5>
-                </div>
-            </div>
-            </div>
-
-            <div class="col-md-2">
-            <div class="menu-item">
-                <a href="#"><img src="Media/best-seller/perfume1.jpeg" width="100%"></a>
-                <div class="detail-item">
-                    <h4>Versace Eros Perfume</h4>
-                    <h5>$90.00</h5>
-                </div>
-            </div>
-            </div>
-
-            <div class="col-md-2">
-            <div class="menu-item">
-                <a href="#"><img src="Media/best-seller/bracelet1.jpeg" width="100%"></a>
-                <div class="detail-item">
-                    <h4>Silver Braclet (Female)</h4>
-                    <h5>$20.00</h5>
-                </div>
-            </div>
-            </div>
-
-            <div class="col-md-2">
-            <div class="menu-item">
-                <a href="#"><img src="Media/best-seller/mug2.jpeg" width="100%"></a>
-                <div class="detail-item">
-                    <h4>Golden-border Glass</h4>
-                    <h5>$35</h5>
-                </div>
-            </div>
-            </div>
-
-        </div>
-  </div>
-</div>
-<!-- End: Best Seller -->
-
-<!-- Start: Feedback -->
-<div class="row background">
-    <div class="title-header text-center">
-        <p style="letter-spacing: 2px;">Feedbacks</p>
-        <p>______</p>
-    </div>
-
-    <div class="container" style="margin-bottom: 20px;">
-       <!-- Feedback 1-->
-        <div class="col-lg-3">
-            <div class="img-size img-layer"><img src="Media/feedback/feedback1.jpeg" alt="">
-                <div class="img-overlay"></div>
-                <!-- Nội dung hiển thị trên ảnh -->
-                <div class="img-content">
-                    <!-- Tiêu đề -->
-                    <h3 class="img-title">Noah Clark</h3>
-                    <!-- Description -->
-                    <blockquote class="img-quote font-weight-light mb-0">" Quality product, This shop is a must-go place."</blockquote>
-                </div>
-            </div>
-        </div>
-       <!-- Feedback 2-->
-       <div class="col-lg-3">
-        <div class="img-size img-layer"><img src="Media/feedback/feedback2.jpeg" alt="">
-            <div class="img-overlay"></div>
-            <!-- Nội dung hiển thị trên ảnh -->
-            <div class="img-content">
-                <!-- Tiêu đề -->
-                <h3 class="img-title">Olivia Rodrigo</h3>
-                <!-- Description -->
-                <blockquote class="img-quote font-weight-light mb-0">" Incredible delivery service, lovely product."</blockquote>
-            </div>
+            <!-- -->
+            <a class="left carousel-control" href="#carousel-id" data-slide="prev"><span
+                    class="glyphicon glyphicon-chevron-left"></span></a>
+            <a class="right carousel-control" href="#carousel-id" data-slide="next"><span
+                    class="glyphicon glyphicon-chevron-right"></span></a>
         </div>
     </div>
-      <!-- Feedback 3-->
-      <div class="col-lg-3">
-        <div class="img-size img-layer"><img src="Media/feedback/feedback3.jpeg" alt="">
-            <div class="img-overlay"></div>
-            <!-- Nội dung hiển thị trên ảnh -->
-            <div class="img-content">
-                <!-- Tiêu đề -->
-                <h3 class="img-title">Florence Pugh</h3>
-                <!-- Description -->
-                <blockquote class="img-quote font-weight-light mb-0">"Very good product as said in description."</blockquote>
-            </div>
-        </div>
-    </div>       
-    <!-- Feedback 4-->
-    <div class="col-lg-3">
-        <div class="img-size img-layer"><img src="Media/feedback/feedback4.jpeg" alt="">
-            <div class="img-overlay"></div>
-            <!-- Nội dung hiển thị trên ảnh -->
-            <div class="img-content">
-                <!-- Tiêu đề -->
-                <h3 class="img-title">Rachel McAdams</h3>
-                <!-- Description -->
-                <blockquote class="img-quote font-weight-light mb-0">"This mug has become my most favourite. "</blockquote>
-            </div>
-        </div>
-    </div> 
+    <!--End: Carousel  -->
 
+    <!-- Start: Best Seller -->
+    <div class="row background">
+        <!--Start: Header-->
+        <div class="title-header text-center">
+            <p style="letter-spacing: 2px;">Best Seller</p>
+            <p>______</p>
+        </div>
+        <!-- End: Header -->
+        <div class="container menu-box">
+            <!-- Start: Body -->
+                <div class="col-md-2">
+                    <div class="menu-item">
+                        <a href="#"><img src="Media/best-seller/mug1.jpeg" width="100%"></a>
+                        <div class="detail-item">
+                            <h4>Vaccuum Coffee Mug</h4>
+                            <h5>35.00 Rs</h5>
+                            <p>Sold Out</p>
+                        </div>
+                    </div>
+                    <div class="menu-overlay"></div>
+                </div>
+
+                <div class="col-md-2">
+                    <div class="menu-item">
+                        <a href="#"><img src="Media/best-seller/gaubong1.jpeg" width="100%"></a>
+                        <div class="detail-item">
+                            <h4>Stuffed Animal Corgi</h4>
+                            <h5>35.00 Rs</h5>
+                            <p>Sold Out</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-2">
+                    <div class="menu-item">
+                        <a href="#"><img src="Media/best-seller/clock1.jpeg" width="100%"></a>
+                        <div class="detail-item">
+                            <h4>Fish-Tank Clock (Blue)</h4>
+                            <h5>45.00 Rs</h5>
+                            <p>Sold Out</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-2">
+                    <div class="menu-item">
+                        <a href="#"><img src="Media/best-seller/perfume1.jpeg" width="100%"></a>
+                        <div class="detail-item">
+                            <h4>Versace Eros Perfume</h4>
+                            <h5>90.00 Rs</h5>
+                            <p>Sold Out</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-2">
+                    <div class="menu-item">
+                        <a href="#"><img src="Media/best-seller/bracelet1.jpeg" width="100%"></a>
+                        <div class="detail-item">
+                            <h4>Silver Braclet (Female)</h4>
+                            <h5>20.00 Rs</h5>
+                            <p>Sold Out</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-2">
+                    <div class="menu-item">
+                        <a href="#"><img src="Media/best-seller/mug2.jpeg" width="100%"></a>
+                        <div class="detail-item">
+                            <h4>Golden-border Glass</h4>
+                            <h5>35.45 Rs</h5>
+                            <p>Sold Out</p>
+                        </div>
+                    </div>
+                </div>
+            <!-- End: Body -->
+            <!-- Start: Footer -->
+                <div class="menu-footer">
+                    <a href="shop-page.html">View Our Products</a>
+                </div>
+            <!-- End: Footer -->
+        </div>
     </div>
-</div>
-<!-- End: Feedback -->
+    <!-- End: Best Seller -->
 
-<!-- Start: Footer -->
+    <!-- Start: Feedback -->
+    <div class="row background">
+        <div class="title-header text-center">
+            <p style="letter-spacing: 2px;">Feedbacks</p>
+            <p>______</p>
+        </div>
+
+        <div class="container" style="margin-bottom: 20px;">
+            <!-- Feedback 1-->
+            <div class="col-lg-3">
+                <div class="img-size img-layer"><img src="Media/feedback/feedback1.jpeg" alt="">
+                    <div class="img-overlay"></div>
+                    <!-- Nội dung hiển thị trên ảnh -->
+                    <div class="img-content">
+                        <!-- Tiêu đề -->
+                        <h3 class="img-title">Noah Clark</h3>
+                        <!-- Description -->
+                        <blockquote class="img-quote font-weight-light mb-0">" Quality product, This shop is a must-go
+                            place."</blockquote>
+                    </div>
+                </div>
+            </div>
+            <!-- Feedback 2-->
+            <div class="col-lg-3">
+                <div class="img-size img-layer"><img src="Media/feedback/feedback2.jpeg" alt="">
+                    <div class="img-overlay"></div>
+                    <!-- Nội dung hiển thị trên ảnh -->
+                    <div class="img-content">
+                        <!-- Tiêu đề -->
+                        <h3 class="img-title">Olivia Rodrigo</h3>
+                        <!-- Description -->
+                        <blockquote class="img-quote font-weight-light mb-0">" Incredible delivery service, lovely
+                            product."</blockquote>
+                    </div>
+                </div>
+            </div>
+            <!-- Feedback 3-->
+            <div class="col-lg-3">
+                <div class="img-size img-layer"><img src="Media/feedback/feedback3.jpeg" alt="">
+                    <div class="img-overlay"></div>
+                    <!-- Nội dung hiển thị trên ảnh -->
+                    <div class="img-content">
+                        <!-- Tiêu đề -->
+                        <h3 class="img-title">Florence Pugh</h3>
+                        <!-- Description -->
+                        <blockquote class="img-quote font-weight-light mb-0">"Very good product as said in description."
+                        </blockquote>
+                    </div>
+                </div>
+            </div>
+            <!-- Feedback 4-->
+            <div class="col-lg-3">
+                <div class="img-size img-layer"><img src="Media/feedback/feedback4.jpeg" alt="">
+                    <div class="img-overlay"></div>
+                    <!-- Nội dung hiển thị trên ảnh -->
+                    <div class="img-content">
+                        <!-- Tiêu đề -->
+                        <h3 class="img-title">Rachel McAdams</h3>
+                        <!-- Description -->
+                        <blockquote class="img-quote font-weight-light mb-0">"This mug has become my most favourite. "
+                        </blockquote>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <!-- End: Feedback -->
+
+ <!-- Start: Footer -->
 <div class="row footer">
     
     <div class="container">
@@ -248,9 +283,10 @@
         
         <!-- Contact Information -->
         <div class="contact">
-            <p style="font-size: 20px">Plot No. 42 & 43, ASR Crest, Image Gardens Rd, Madhapur, 500081, India </p>
-            <p style="font-size: 20px;">giftshop@gmail.com </p> 
+            <p style="font-size: 20px">590 Cach Mang Thang Tam Street, Ward 11, District 3, Ho Chi Minh City, Vietnam </p>
+            <p style="font-size: 20px;">giftshop@fpt.edu.vn</p> 
             <p style="font-size: 20px;">022 261 560 93 </p>
+            
         </div>
         <!-- Social Media -->
         <div class="social-icons">
@@ -275,66 +311,67 @@
 </div>
 <!-- End: Footer -->
 
-<!-- Modal Member -->
-<div class="modal fade" id="memberModal" role="dialog">
-    <div class="modal-dialog modal-lg row">
-    
+    <!-- Modal Member -->
+    <div class="modal fade" id="memberModal" role="dialog">
+        <div class="modal-dialog modal-lg row">
+
             <!-- Modal content-->
-        <div class="modal-content">
+            <div class="modal-content">
 
-              <!-- Modal Header -->
-              <div class="modal-header text-center" style="padding:35px 50px; background: #ffe5d8">
-                <button type="button" class="close" data-dismiss="modal">&times;</button>
-                <h4 style="letter-spacing: 1.5px;">MEMBERSHIP</h4>
-              </div>
-
-              <!--Start: Modal Body -->
-              <!-- Left-Body -->
-              <div class="modal-body col-md-6" style="padding:40px 50px; background: #f4f9ff">
-                <div class="text-center modal-header">
-                    <h3>Log in </h3>
-                </div>
-                
-                <form role="form" class="margin">
-
-                  <div class="form-group">
-                    <label for="usrname"><span class="glyphicon glyphicon-user"></span> Email</label>
-                    <input type="email" class="form-control" id="usremail" placeholder="">
-                  </div>
-
-                  <div class="form-group">
-                    <label for="psw"><span class="glyphicon glyphicon-eye-open"></span> Password</label>
-                    <input type="password" class="form-control" id="psw" placeholder="">
-                  </div>
-
-                  <div class="checkbox">
-                    <label><input type="checkbox" value="" checked>Remember me</label>
-                  </div>
-
-                    <button type="submit" class="login-btn btn btn-block">Login</button>
-                </form>
-                
-              </div>
-              <!-- Right-Body -->
-              <div class="modal-body col-md-6 bg-member" style="padding:40px 50px;">
-                <div class="text-center modal-header">
-                    <h3>Log in with</h3>
+                <!-- Modal Header -->
+                <div class="modal-header text-center" style="padding:35px 50px; background: #ffe5d8">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <h4 style="letter-spacing: 1.5px;">MEMBERSHIP</h4>
                 </div>
 
-                <div class="social-platform margin">
-                    <ul class="social-list">
-                        <li><a href="#facebook"><i class="fb fa-icon fa fa-facebook-f"></i></a></li>
-                        <li><a href="#twitter"><i class="twt fa-icon fa fa-twitter"></i></a></li>
-                        <li><a href="#google"><i class="gg fa-icon fa fa-google-plus"></i></a></li>
-                    </ul>
+                <!--Start: Modal Body -->
+                <!-- Left-Body -->
+                <div class="modal-body col-md-6" style="padding:40px 50px; background: #f4f9ff">
+                    <div class="text-center modal-header">
+                        <h3>Log in </h3>
+                    </div>
+
+                    <form role="form" class="margin">
+
+                        <div class="form-group">
+                            <label for="usrname"><span class="glyphicon glyphicon-user"></span> Email</label>
+                            <input type="email" onfocus="show(this)" onblur="hide(this)" class="form-control" id="usremail" placeholder="">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="psw"><span class="glyphicon glyphicon-eye-open"></span> Password</label>
+                            <input type="password" onfocus="show(this)" onblur="hide(this)"  class="form-control" id="psw" placeholder="">
+                        </div>
+
+                        <div class="checkbox">
+                            <label><input type="checkbox" value="" checked>Remember me</label>
+                        </div>
+
+                        <button type="submit" class="login-btn btn btn-block">Login</button>
+                    </form>
+
                 </div>
-                
-              </div>
-              <!-- End: Modal Body -->
+                <!-- Right-Body -->
+                <div class="modal-body col-md-6 bg-member" style="padding:40px 50px;">
+                    <div class="text-center modal-header">
+                        <h3>Log in with</h3>
+                    </div>
+
+                    <div class="social-platform margin">
+                        <ul class="social-list">
+                            <li><a href="#facebook"><i class="fb fa-icon fa fa-facebook-f"></i></a></li>
+                            <li><a href="#twitter"><i class="twt fa-icon fa fa-twitter"></i></a></li>
+                            <li><a href="#google"><i class="gg fa-icon fa fa-google-plus"></i></a></li>
+                        </ul>
+                    </div>
+
+                </div>
+                <!-- End: Modal Body -->
+            </div>
+        </div>
     </div>
-  </div> 
-</div>
 
-<script src="script.js"></script>
+    <script src="script.js"></script>
 </body>
+
 </html>

@@ -9,9 +9,7 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
     <script src="https://use.fontawesome.com/34fc0a3bbd.js"></script>
     <link rel="stylesheet" href="style.css">
-    <title>Demo</title>
-
-
+    <title>Shop</title>
 </head>
 <body>
     
@@ -31,10 +29,18 @@
                             </ul> -->
                         </li>                        
                         <li><a href="features.html">FEATURES</a></li>
+                        <li><a href="gallery.html">GALLERY</a></li>
                     <!-- Logo -->
                         <a style="padding:0 50px" href="index.html"> <img src="Media/logo/logo1(black).png" width="150" height="60"></a>
                             <li><a href="about-us.html">ABOUT US</a></li>
                             <li><a href="contact.html">CONTACT</a></li>
+                            <li class="cart">
+                                <a href="#" id="cart-shop">
+                                    <span></span>
+                                    <span>ITEMS</span>
+                                    <span class="glyphicon glyphicon-shopping-cart" id="count-item" data-count="0"></span>
+                                </a>
+                            </li>
                             <li><a href="#" id="member">MEMBER</a></li>
                     </ul>
             </div> 
@@ -56,11 +62,11 @@
 <div id="filter-data" class="filter-section container-fluid">
         
             <!--Start: Cột Filter -->
-            <div class="col-sm-3 col-md-3 col-lg-3 ">
+            <div  class="col-sm-4 col-md-4 col-lg-4 ">
                 <div class="categories-header">
                     <p>Categories <span class="fa fa-filter" style="color: black; font-size: 20px"></span></p>
                 </div>
-
+                    
                 <div class="slide-box" id="filter_button">
     
                     <div class="vertical-menu">
@@ -114,16 +120,16 @@
             </div>
             <!-- End: Cột Filter -->
 
+
             <!-- Start: Cột sản phẩm -->
-            <div class="col-sm-9 col-md-9">
+            <div class="col-sm-8 col-md-8">
                 <!-- Khối chứa thông tin sản phẩm -->
-                    <div class="mid1" id="products">
+                    <div class="product-layout" id="products">
                     </div>
             </div>
             <!-- End: Cột sản phẩm -->
 
-
-            <!-- Modal -->
+            <!-- Modal Temporary -->
             <div class="modal fade" id="showModal" role="dialog">
                 <div class="modal-dialog modal-lg">
 
@@ -145,7 +151,66 @@
 </div>
 <!-- END DATA PRODUCT -->
 
+<!--Start: Preview Panel-->
+    <div id="id00" class="panel-body row bg-light-pink comparePanle w3-margin-top">
+        
+        <!--Start: Header -->
+        <div class="row w3-margin-top preview-header-panel">
+            
+            <div class="container">
+                <a onclick="document.getElementById('id00').style.display='none'" class="glyphicon glyphicon-remove-circle modal-closeBtn1 pointer-cursor closeBtn"></a>
+            </div>
+                <p>Added Products for Comparison</p>
+            </div>
+            <!-- End: Header -->
+            
+            <!--Start: Added Product Row (Javascript) -->
+            <div class="row titleMargin comparePan">
+            </div>
+            <!-- End: Added Product Row (Javascript) -->
 
+            <!-- Start: Compare Button -->
+            <div class="row w3-margin-bottom">  
+                <button class="btn cmprBtn" disabled>Compare Products</button>
+            </div>
+            
+            <!-- End: Compare Button -->
+    </div>
+<!--End: Preview panel-->
+   
+<!-- comparision popup-->
+    <div id="id01" class="w3-animate-zoom w3-modal modPos">
+
+        <div class="row contentPop w3-margin-top">
+            <div class="comparision-header text-center w3-margin-bottom">
+            </div>
+            
+        </div>
+
+        <a onclick="document.getElementById('id01').style.display='none'" class="glyphicon glyphicon-remove-circle modal-closeBtn pointer-cursor closeBtn"></a>
+
+    </div>
+<!--end of comparision popup-->
+
+
+<!--  warning model  -->
+<div id="WarningModal" class="modal">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header" style="background-color: red;">
+                    <h4 class="modal-title"><span><b> ⚠ Error</b>  </span></h4>
+                </div>
+                <div class="modal-body2">
+                    <h3>Maximum of Three products are allowed for comparision</h3>
+                </div>
+
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+</div>
+<!--  end of warning model  -->
 
 
 <!-- Start: Feedback -->
@@ -226,9 +291,10 @@
         
         <!-- Contact Information -->
         <div class="contact">
-            <p style="font-size: 20px">Plot No. 42 & 43, ASR Crest, Image Gardens Rd, Madhapur, 500081, India </p>
-            <p style="font-size: 20px;">giftshop@gmail.com </p> 
+            <p style="font-size: 20px">590 Cach Mang Thang Tam Street, Ward 11, District 3, Ho Chi Minh City, Vietnam </p>
+            <p style="font-size: 20px;">giftshop@fpt.edu.vn</p> 
             <p style="font-size: 20px;">022 261 560 93 </p>
+            
         </div>
         <!-- Social Media -->
         <div class="social-icons">
@@ -246,7 +312,7 @@
         </div>
 
         <div class="copyright text-center">
-            <h4 style="font-weight: 200;">Copyright &copy by Gift Shop. All rights reserved.</h4>
+            <h4 style="font-weight: 200;">Copyright &copy 2021 by Gift Shop. All rights reserved.</h4>
         </div>
 
     </div>
@@ -277,12 +343,12 @@
 
                   <div class="form-group">
                     <label for="usrname"><span class="glyphicon glyphicon-user"></span> Email</label>
-                    <input type="email" class="form-control" id="usremail" placeholder="">
+                    <input type="email" onfocus="show(this)" onblur="hide(this)"  class="form-control" id="usremail" placeholder="">
                   </div>
 
                   <div class="form-group">
                     <label for="psw"><span class="glyphicon glyphicon-eye-open"></span> Password</label>
-                    <input type="password" class="form-control" id="psw" placeholder="">
+                    <input type="password" onfocus="show(this)" onblur="hide(this)"  class="form-control" id="psw" placeholder="">
                   </div>
 
                   <div class="checkbox">
@@ -312,6 +378,9 @@
     </div>
   </div> 
 </div>
+<!-- End Modal Member -->
+
+
 
 <script src="script.js"></script>
 </body>
