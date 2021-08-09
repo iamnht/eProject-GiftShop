@@ -8,13 +8,13 @@ Group 2:
 
 3 collaborators:
 
-- Do Thanh An
-- Pham Quang Ngoc Thach
-- Nguyen Hoang Tuan
+- Do Thanh An | Student1316200
+- Pham Quang Ngoc Thach | Student1313749
+- Nguyen Hoang Tuan | Student1313762
              
 ============================
 
-Published: https://iamnht.github.io/eProject-Demo-/
+Published: https://iamnht.github.io/eProject-GiftShop/
 
 ============================
 
